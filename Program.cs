@@ -14,6 +14,7 @@ IChatClient client =
 
 var options = new ChatOptions()
 {
+	Instructions = "You are a helpful assistant that can perform various tasks using the provided tools.",
 	Tools = [
 		AIFunctionFactory.Create(GetCurrentTime),
 		//AIFunctionFactory.Create(Multiply)
